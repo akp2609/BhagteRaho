@@ -2,7 +2,6 @@ package com.example.bhagteraho.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.google.android.gms.common.api.Response
 
 @Dao
 interface RunDAO {

@@ -22,6 +22,7 @@ object AppModule {
         @ApplicationContext context: Context
     ) = Room.databaseBuilder(context,RunningDataBase::class.java,RUNNING_DATABASE_NAME).build()
 
+    /** RunningDataBase will be injected from the provideRunningDataBase() method */
     @Singleton
     @Provides
     fun provideRunDAO(dataBase: RunningDataBase) = dataBase.getRunDAO()
